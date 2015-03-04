@@ -1,1 +1,1 @@
- 一个简易的个人博客
+Personal hexo theme
