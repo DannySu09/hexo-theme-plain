@@ -1,1 +1,1 @@
-{% block page %}{% endblock %}
+{% extends './_layout.swig' %}
