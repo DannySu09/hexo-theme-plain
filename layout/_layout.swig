@@ -11,7 +11,7 @@
     <header class="head">
         <div class="head-wrap">
             <a class="head-flag" href="/">
-                <img class="head-flag-img" src="" alt="苏乃文的个人博客"/>
+                <img class="head-flag-img" src="image/logo.jpg" alt="苏乃文的个人博客"/>
                 <h1 class="head-flag-title">个人博客</h1>
             </a>
             <nav class="head-nav">
