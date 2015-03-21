@@ -6,7 +6,8 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  font: $font-size-default + "/1.5 500" "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font: $font-size-default + "/1.5" "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background-color: $color-grey-l1;
 }
 
 * {
@@ -30,4 +31,12 @@ p {
 
 h1 {
   font-size: px2em(30px, $font-size-default);
+}
+
+input,
+button {
+  border: none;
+  padding: 0;
+  -webkit-appearance: none;
+  outline: none;
 }

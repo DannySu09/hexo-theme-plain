@@ -1,5 +1,5 @@
 // from https://github.com/W3cplus/Sass-Resources/blob/master/functions/_px2em.scss
-@function px2em($px, $base-font-size: 16px) {
+@function px2em($px, $base-font-size: 14px) {
   @if (unitless($px)) {
     @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
     @return px2em($px + 0px); // That may fail.
