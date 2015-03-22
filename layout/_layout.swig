@@ -50,6 +50,5 @@
             </section>
         </aside>
     </main>
-    <footer class="foot"><p class="foot-text">love sunaiwen 2015</p></footer>
 </body>
 </html>
