@@ -20,7 +20,7 @@
 .head-flag-title {
   display: inline-block;
   margin-left: 5px;
-  color: $color-blue;
+  color: $color-general-high-light;
   font-size: px2em(30px);
   font-weight: bold;
   vertical-align: top;
@@ -36,10 +36,10 @@
   display: inline-block;
   margin-right: 20px;
   line-height: 40px;
-  color: $color-grey-l3;
+  color: $color-general-title;
   font-size: px2em(20px);
   &:hover {
-    border-bottom: 4px solid $color-blue;
+    border-bottom: 4px solid $color-general-high-light;
   }
 }
 
@@ -53,6 +53,6 @@
   padding-right: 10px;
   border-radius: 26px;
   font-size: px2em(20px);
-  color: $color-grey-l2;
-  background-color: $color-grey-l1;
+  color: $color-line-and-small-area;
+  background-color: $color-main-field-background;
 }
