@@ -1,0 +1,30 @@
+.essay {
+  padding: 40px 50px;
+  border-radius: 5px;
+  font-size: px2em(20px);
+  background-color: $color-block-background;
+}
+
+.essay-head {
+  margin-bottom: 50px;
+}
+
+.essay-title {
+  margin-bottom: 20px;
+  color: $color-general-title;
+}
+
+.essay-break {
+  color: $color-line-and-small-area;
+}
+
+.essay-meta {
+  font-size: px2em(14px, 20px);
+  line-height: (20/14);
+  color: $color-line-and-small-area;
+}
+
+.essay-meta-item {
+  display: inline-block;
+  margin-right: 10px;
+}

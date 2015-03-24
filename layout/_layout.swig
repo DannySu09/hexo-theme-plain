@@ -26,15 +26,15 @@
             </form>
         </div>
     </header>
-    <main class="main">
+    <main class="main cf">
         <section class="main-article">
             <article class="essay">
                 <header class="essay-head">
                     <h1 class="essay-title">如何爱上你</h1>
                     <hr class="essay-break"/>
                     <ul class="essay-meta">
-                        <li class="essay-meta-item"></li>
-                        <li class="essay-meta-item"></li>
+                        <li class="essay-meta-item"><i class="fa fa-clock-o"></i>page.date</li>
+                        <li class="essay-meta-item"><i class="fa fa-tag"></i>page.tags</li>
                     </ul>
                 </header>
                 <div class="essay-content"></div>
