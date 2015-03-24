@@ -31,10 +31,9 @@
             <article class="essay">
                 <header class="essay-head">
                     <h1 class="essay-title">如何爱上你</h1>
-                    <hr class="essay-break"/>
                     <ul class="essay-meta">
-                        <li class="essay-meta-item"><i class="fa fa-clock-o"></i>page.date</li>
-                        <li class="essay-meta-item"><i class="fa fa-tag"></i>page.tags</li>
+                        <li class="essay-meta-item"><i class="fa fa-clock-o emi-icon"></i><span class="emi-text">page.date</span></li>
+                        <li class="essay-meta-item"><i class="fa fa-tag emi-icon"></i><span class="emi-text">page.tags</span></li>
                     </ul>
                 </header>
                 <div class="essay-content"></div>

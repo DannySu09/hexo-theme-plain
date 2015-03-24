@@ -14,11 +14,9 @@
   color: $color-general-title;
 }
 
-.essay-break {
-  color: $color-line-and-small-area;
-}
-
 .essay-meta {
+  padding-top: 10px;
+  border-top: 1px solid $color-main-field-background;
   font-size: px2em(14px, 20px);
   line-height: (20/14);
   color: $color-line-and-small-area;
@@ -27,4 +25,12 @@
 .essay-meta-item {
   display: inline-block;
   margin-right: 10px;
+}
+
+.emi-icon {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.emi-text {
+  margin-left: 5px;
 }
