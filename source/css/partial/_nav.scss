@@ -1,8 +1,8 @@
 .head {
-  height: 90px;
-  margin-bottom: 65px;
-  padding: 20px 20px;
-  line-height: 50px;
+  position: relative;
+  height: 60px;
+  padding: 8px 20px 8px 50px;
+  line-height: 44px;
   background-color: $color-block-background;
 }
 
@@ -15,32 +15,35 @@
 }
 .head-flag-img {
   width: auto;
-  height: 50px;
+  height: 44px;
   vertical-align: top;
 }
 .head-flag-title {
   display: inline-block;
-  margin-left: 5px;
   color: $color-general-high-light;
-  font-size: px2em(30px);
+  font-size: px2em(24px);
   font-weight: bold;
-  vertical-align: top;
 }
 
 .head-nav {
-  float: left;
-  margin-left: 60px;
-  padding-top: 5px;
-  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -172px;
+  margin-top: -20px;
+  height: 40px;
+  line-height: 40px;
 }
 .head-nav-item {
   display: inline-block;
-  margin-right: 20px;
-  line-height: 40px;
+  margin-right: 30px;
   color: $color-general-title;
-  font-size: px2em(20px);
+  font-size: px2em(18px);
+  &:last-of-type {
+    margin-right: 0;
+  }
   &:hover {
-    border-bottom: 4px solid $color-general-high-light;
+    border-bottom: 3px solid $color-general-high-light;
   }
 }
 
@@ -49,11 +52,12 @@
 }
 .head-search-input {
   width: px2em(250px);
-  height: 50px;
+  height: 35px;
+  margin-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 26px;
-  font-size: px2em(20px);
+  border-radius: 23px;
+  font-size: px2em(18px);
   color: $color-line-and-small-area;
   background-color: $color-main-field-background;
 }

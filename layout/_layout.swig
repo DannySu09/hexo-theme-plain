@@ -9,7 +9,7 @@
     <title>雅阁</title>
 </head>
 <body>
-    <header class="head cf">
+    <header class="head cf blockShadow">
         <a class="head-flag" href="/">
             <img class="head-flag-img" src="image/logo.jpg" alt="苏乃文的个人博客"/>
             <h1 class="head-flag-title">个人博客</h1>
@@ -28,7 +28,7 @@
     </header>
     <main class="main cf">
         <section class="main-article">
-            <article class="essay">
+            <article class="essay blockShadow">
                 <header class="essay-head">
                     <h1 class="essay-title">如何爱上你</h1>
                     <ul class="essay-meta">
@@ -40,7 +40,7 @@
             </article>
         </section>
         <aside class="main-aside">
-            <section class="main-aside-section">
+            <section class="main-aside-section blockShadow">
                 <h1 class="mas-title">Achive</h1>
                 <ul class="aside-list">
                     <li class="aside-list-item"></li>
