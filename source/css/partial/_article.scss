@@ -1,24 +1,22 @@
 .essay {
-  padding: 40px 50px;
-  border-radius: 5px;
-  font-size: px2em(20px);
-  background-color: $color-block-background;
+  @extend %block;
 }
 
 .essay-head {
   margin-bottom: 50px;
+  @extend %block;
 }
 
 .essay-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: $color-general-title;
 }
 
 .essay-meta {
-  padding-top: 10px;
+  padding-top: 5px;
   border-top: 1px solid $color-main-field-background;
-  font-size: px2em(14px, 20px);
-  line-height: (20/14);
+  font-size: px2em(14px, 18px);
+  line-height: (18/14);
   color: $color-line-and-small-area;
 }
 
@@ -28,9 +26,14 @@
 }
 
 .emi-icon {
+  color: $color-general-high-light;
   font-size: 1.2em;
   vertical-align: middle;
 }
 .emi-text {
   margin-left: 5px;
+}
+
+.essay-content {
+  font-size: px2em(18px);
 }

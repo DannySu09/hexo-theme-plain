@@ -1,7 +1,7 @@
 .head {
   position: relative;
   height: 60px;
-  padding: 8px 20px 8px 50px;
+  padding: 8px 30px 8px 50px;
   line-height: 44px;
   background-color: $color-block-background;
 }
@@ -52,12 +52,12 @@
 }
 .head-search-input {
   width: px2em(250px);
-  height: 35px;
-  margin-top: 5px;
+  height: 40px;
+  margin-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 23px;
-  font-size: px2em(18px);
+  font-size: px2em(15px);
   color: $color-line-and-small-area;
   background-color: $color-main-field-background;
 }

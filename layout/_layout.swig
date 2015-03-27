@@ -28,7 +28,7 @@
     </header>
     <main class="main cf">
         <section class="main-article">
-            <article class="essay blockShadow">
+            <article class="essay block blockShadow">
                 <header class="essay-head">
                     <h1 class="essay-title">如何爱上你</h1>
                     <ul class="essay-meta">
@@ -40,7 +40,7 @@
             </article>
         </section>
         <aside class="main-aside">
-            <section class="main-aside-section blockShadow">
+            <section class="main-aside-section block blockShadow">
                 <h1 class="mas-title">Achive</h1>
                 <ul class="aside-list">
                     <li class="aside-list-item"></li>
