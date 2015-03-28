@@ -1,9 +1,10 @@
 .head {
   position: relative;
-  height: 60px;
-  padding: 8px 30px 8px 50px;
-  line-height: 44px;
-  background-color: $color-block-background;
+  height: 82px;
+  padding: 25px 30px 10px 30px;
+  z-index: $zIndex-l2;
+  line-height: 47px;
+  text-align: center;
 }
 
 .head a {
@@ -15,35 +16,36 @@
 }
 .head-flag-img {
   width: auto;
-  height: 44px;
+  height: 47px;
+  border-radius: 26px;
   vertical-align: top;
-}
-.head-flag-title {
-  display: inline-block;
-  color: $color-general-high-light;
-  font-size: px2em(24px);
-  font-weight: bold;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
 }
 
 .head-nav {
   position: absolute;
-  top: 50%;
   left: 50%;
-  margin-left: -172px;
-  margin-top: -20px;
-  height: 40px;
-  line-height: 40px;
+  top: 25px;
+  margin-left: -154px;
+  border-bottom: 2px solid $color-line-and-small-area
 }
 .head-nav-item {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 40px;
   color: $color-general-title;
-  font-size: px2em(18px);
+  font-size: px2em(16px);
+  text-shadow: 0 1px 3px rgba(0,0,0,.7);
+  -webkit-text-shadow: 0 1px 3px rgba(0,0,0,.7);
+  vertical-align: top;
   &:last-of-type {
     margin-right: 0;
   }
   &:hover {
-    border-bottom: 3px solid $color-general-high-light;
+    color: $color-general-high-light;
+  }
+  @at-root .has-filter & {
+    color: #ffffff;
   }
 }
 
@@ -51,13 +53,16 @@
   float: right;
 }
 .head-search-input {
-  width: px2em(250px);
+  width: px2em(180px);
   height: 40px;
-  margin-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  border: 1px solid $color-line-and-small-area;
   border-radius: 23px;
   font-size: px2em(15px);
   color: $color-line-and-small-area;
-  background-color: $color-main-field-background;
+  background-color: $color-block-background;
+  @at-root .has-filter & {
+    border: none;
+  }
 }

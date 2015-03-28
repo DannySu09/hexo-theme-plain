@@ -1,0 +1,16 @@
+.aside {
+
+}
+
+.aside-list {
+  list-style: none;
+  color: $color-general-high-light;
+}
+
+.aside-list-item {
+  color: $color-line-and-small-area;
+  font-size: px2em(16px, $font-size-main);
+  a {
+    @extend %anchorActAsNormal;
+  }
+}

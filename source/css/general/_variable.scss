@@ -12,13 +12,21 @@ $color-general-title: $color-grey-l4;
 $color-main-field-background: $color-grey-l1;
 $color-line-and-small-area: $color-grey-l2;
 $color-block-background: #ffffff;
+$color-global-background: $color-grey-l4;
 
 
 
 //                --------- font-size ---------
 $font-size-default: 14px;
+$font-size-main: 18px;
 
 
 
 //                --------- width and height ---------
 $width-main-field: 960px;
+
+
+//                --------- z-index ------------
+$zIndex-l1: 1;
+$zIndex-l2: 10;
+$zIndex-l3: 100;

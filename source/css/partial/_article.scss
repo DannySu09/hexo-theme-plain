@@ -1,21 +1,17 @@
-.essay {
-  @extend %block;
-}
-
 .essay-head {
   margin-bottom: 50px;
-  @extend %block;
 }
 
 .essay-title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: px2em(30px, $font-size-main);
   color: $color-general-title;
 }
 
 .essay-meta {
   padding-top: 5px;
   border-top: 1px solid $color-main-field-background;
-  font-size: px2em(14px, 18px);
+  font-size: px2em(14px, $font-size-main);
   line-height: (18/14);
   color: $color-line-and-small-area;
 }

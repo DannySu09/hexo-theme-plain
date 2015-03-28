@@ -1,7 +1,12 @@
 %block{
-  padding: 15px 32px 30px 32px;
+  padding: 15px;
   border-radius: 5px;
   font-size: px2em(18px);
   color: $color-general-text;
   background-color: $color-block-background;
+}
+
+%anchorActAsNormal {
+  color: inherit;
+  text-decoration: none;
 }
