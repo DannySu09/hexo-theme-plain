@@ -1,35 +1,63 @@
-.essay-head {
-  margin-bottom: 50px;
+.article {
+  margin-bottom: 200px;
 }
 
-.essay-title {
-  margin-bottom: 20px;
-  font-size: px2em(30px, $font-size-main);
-  color: $color-general-title;
+.article-head {
+  margin-bottom: 30px;
 }
 
-.essay-meta {
-  padding-top: 5px;
-  border-top: 1px solid $color-main-field-background;
+.article-title {
+  display: block;
+  @extend %anchorActAsNormal;
+  @extend %blockTitle;
+}
+
+.article-meta {
+  padding-top: 10px;
   font-size: px2em(14px, $font-size-main);
   line-height: (18/14);
   color: $color-line-and-small-area;
 }
 
-.essay-meta-item {
+.article-meta-item {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-.emi-icon {
+.ami-icon {
   color: $color-general-high-light;
   font-size: 1.2em;
-  vertical-align: middle;
-}
-.emi-text {
-  margin-left: 5px;
+  vertical-align: top;
 }
 
-.essay-content {
-  font-size: px2em(18px);
+.ami-text {
+  @extend %anchorActAsNormal;
+}
+
+.article-content {
+  font-size: px2em(16px);
+}
+
+.article-footer {
+  margin-top: 60px;
+  border-top: 1px solid $color-line-and-small-area;
+}
+.article-footer-readFurther {
+  float: right;
+  width: 6.5em;
+  height: 2.5em;
+  margin-top: -1px;
+  border: 1px solid $color-line-and-small-area;
+  border-radius: 0 0 5px 5px;
+  font-size: px2em(14px, $font-size-main);
+  color: $color-line-and-small-area;
+  line-height: 2.5;
+  text-align: center;
+  @extend %anchorActAsNormal;
+  &:hover {
+    color: $color-general-high-light;
+    border-left-color: $color-general-high-light;
+    border-right-color: $color-general-high-light;
+    border-bottom-color: $color-general-high-light;
+  }
 }

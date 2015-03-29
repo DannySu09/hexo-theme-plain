@@ -3,10 +3,24 @@
   border-radius: 5px;
   font-size: px2em(18px);
   color: $color-general-text;
-  background-color: $color-block-background;
+  background-color: $color-white;
 }
 
 %anchorActAsNormal {
   color: inherit;
   text-decoration: none;
+}
+
+%blockShadow {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.35);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+}
+
+%blockTitle {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-line-and-small-area;
+  font-size: px2em(32px, $font-size-main);
+  font-weight: bold;
+  line-height: 1.2;
+  color: $color-general-title;
 }

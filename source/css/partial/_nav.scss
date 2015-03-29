@@ -1,7 +1,7 @@
 .head {
   position: relative;
   height: 82px;
-  padding: 25px 30px 10px 30px;
+  padding: 25px 60px 10px 60px;
   z-index: $zIndex-l2;
   line-height: 47px;
   text-align: center;
@@ -19,14 +19,19 @@
   height: 47px;
   border-radius: 26px;
   vertical-align: top;
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
-  -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
+  @at-root .has-filter & {
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
+  }
 }
 
+$height-head-nav-menu: 40px;
 .head-nav {
   position: absolute;
   left: 50%;
   top: 25px;
+  height: $height-head-nav-menu;
+  line-height: $height-head-nav-menu - 1px;
   margin-left: -154px;
   border-bottom: 2px solid $color-line-and-small-area
 }
@@ -35,8 +40,8 @@
   margin-right: 40px;
   color: $color-general-title;
   font-size: px2em(16px);
-  text-shadow: 0 1px 3px rgba(0,0,0,.7);
-  -webkit-text-shadow: 0 1px 3px rgba(0,0,0,.7);
+  font-weight: bold;
+  text-shadow: none;
   vertical-align: top;
   &:last-of-type {
     margin-right: 0;
@@ -46,6 +51,8 @@
   }
   @at-root .has-filter & {
     color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.7);
+    -webkit-text-shadow: 0 1px 3px rgba(0,0,0,.7);
   }
 }
 
@@ -61,8 +68,12 @@
   border-radius: 23px;
   font-size: px2em(15px);
   color: $color-line-and-small-area;
-  background-color: $color-block-background;
+  background-color: $color-white;
+  &:focus {
+    border-color: $color-general-high-light;
+    color: $color-general-high-light;
+  }
   @at-root .has-filter & {
-    border: none;
+    border: none !important;
   }
 }

@@ -5,3 +5,8 @@
     @content;
   }
 }
+
+@mixin transition($prop: all, $duration: .4s) {
+  transition: $prop $duration;
+  -webkit-transition: $prop $duration;
+}

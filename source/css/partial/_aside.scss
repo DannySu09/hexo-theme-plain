@@ -1,16 +1,39 @@
 .aside {
+  margin-bottom: 100px;
+}
 
+.aside-title {
+  @extend %blockTitle;
 }
 
 .aside-list {
+  padding-top: 10px;
   list-style: none;
   color: $color-general-high-light;
 }
 
 .aside-list-item {
+  margin-bottom: 15px;
   color: $color-line-and-small-area;
   font-size: px2em(16px, $font-size-main);
   a {
     @extend %anchorActAsNormal;
   }
+}
+
+.ali-text {
+  display: block;
+  &:hover {
+    color: $color-general-high-light;
+  }
+}
+.ali-count {
+  float: right;
+  min-width: 1.5em;
+  *width: 1.5em;
+  height: 1.5em;
+  border: 1px solid $color-general-high-light;
+  border-radius: 1em;
+  line-height: 1.4;
+  text-align: center;
 }

@@ -7,13 +7,13 @@
   height: 100%;
   background-size: 120% 120%;
   background-position: -5% -5%;
-  z-index: $zIndex-l1;
-  -webkit-filter: blur(15px);
-  -o-filter: blur(15px);
-  filter: blur(15px);
   content: '';
   @at-root .has-filter & {
     display: block;
+    z-index: $zIndex-l1;
+    -webkit-filter: blur(15px);
+    -o-filter: blur(15px);
+    filter: blur(15px);
   }
 }
 
@@ -22,11 +22,14 @@
   width: 960px;
   padding: 35px 40px 35px 40px;
   margin-left: auto;
-  margin-top: 130px;
+  margin-top: 80px;
   margin-right: auto;
   z-index: $zIndex-l2;
   font-size: $font-size-main;
   @extend %block;
+  @at-root .has-filter & {
+    @extend %blockShadow
+  }
 }
 
 .main-article {
