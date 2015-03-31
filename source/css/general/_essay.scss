@@ -14,12 +14,14 @@
     margin-top: 3em;
   }
 
-  h2+p {
-    margin-top: 1.5em;
-  }
-
   p {
     margin-top: 2.5em;
+    &:last-of-type {
+      margin-bottom: 2.5em;
+    }
+    @at-root h2+p {
+      margin-top: 1em !important;
+    }
   }
 
   pre {
@@ -45,7 +47,8 @@
     @extend %coverPrismStyle
   }
 
-  ol {
+  ol, ul {
+    margin-top: .6em;
     padding-left: 1.2em;
   }
 

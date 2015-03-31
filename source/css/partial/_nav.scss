@@ -67,13 +67,14 @@ $height-head-nav-menu: 40px;
 }
 .head-search-input {
   width: px2em(180px);
-  height: 40px;
+  height: 35px;
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid $color-line-and-small-area;
-  border-radius: 23px;
+  border-radius: 18px;
   font-size: px2em(15px);
   font-family: inherit;
+  line-height: 34px;
   color: $color-line-and-small-area;
   background-color: $color-white;
   &:focus {
