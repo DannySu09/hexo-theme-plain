@@ -21,7 +21,7 @@
                 </li>
                 <li class="article-meta-item">
                     {% if post.tags.length %}
-                        <i class="fa fa-tags ami-icon"></i>
+                        <i class="fa {% if post.tags.length > 1 %} fa-tags {% else %} fa-tag {% endif %} ami-icon"></i>
                         {% for tag in post.tags %}
                             {% if tag.path %}
                                 <a class="ami-text" href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
