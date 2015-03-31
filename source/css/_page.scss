@@ -28,17 +28,20 @@
   font-size: $font-size-main;
   @extend %block;
   @at-root .has-filter & {
-    @extend %blockShadow
+    @extend %blockShadow;
+    padding: 35px 20px;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
   }
 }
 
 .main-article {
   float: left;
-  width: 660px;
-  margin-right: 100px;
+  width: calc-percent(660px, 960px);
+  margin-right: calc-percent(100px, 960px);
 }
 
 .main-aside {
   float: left;
-  width: 200px;
+  width: calc-percent(200px, 960px);
 }

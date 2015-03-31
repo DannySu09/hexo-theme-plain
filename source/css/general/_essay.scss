@@ -25,7 +25,9 @@
   pre {
     width: 100%;
     overflow: auto;
+    *zoom: 0;
   }
+  
   pre, code {
     margin-left: .1em;
     margin-right: .1em;
