@@ -16,7 +16,7 @@
                     <i class="fa fa-book ami-icon"></i>
                     {% for category in post.categories  %}
                         {% if category.path %}
-                            <a class="ami-text" href="{{ category.path }}">{{ category.name }}</a>
+                            <a class="ami-text" href="{{ url_for(category.path) }}">{{ category.name }}</a>
                         {% else %}
                             <span class="ami-text">{{ category.name }}</span>
                         {% endif %}
@@ -25,12 +25,12 @@
             </li>
             <li class="article-meta-item">
                 {% if post.tags.length %}
-                    <i class="fa fa-tags ami-icon"></i>
+                    <i class="fa {% if post.tags.length > 1 %} fa-tags {% else %} fa-tag {% endif %} ami-icon"></i>
                     {% for tag in post.tags %}
                         {% if tag.path %}
-                            <a class="ami-text" href="{{ tag.path }}">{{ tag.name }}</a>
+                            <a class="ami-text" href="{{ url_for(tag.path) }}">{{ tag.name }}</a>&nbsp;
                         {% else %}
-                            <span class="ami-text">{{ tag.name }}</span>
+                            <span class="ami-text">{{ tag.name }}</span>&nbsp;
                         {% endif %}
                     {% endfor %}
                 {% endif %}

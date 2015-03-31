@@ -9,5 +9,10 @@
 }
 
 .u-hightLightText {
-  color: $color-general-high-light;
+  color: $color-general-high-light !important;
+}
+
+.u-centerBlock {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

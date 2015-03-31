@@ -9,3 +9,4 @@
         {% endfor %}
     </section>
 {% endblock %}
+{% block aside %}{% include '_partial/aside.swig' %}{% endblock %}

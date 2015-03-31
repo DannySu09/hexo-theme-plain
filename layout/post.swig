@@ -7,3 +7,4 @@
         {{ postRender.post(page, 'full') }}
     </section>
 {% endblock %}
+{% block aside %}{% include '_partial/aside.swig' %}{% endblock %}

@@ -3,6 +3,13 @@
   &.is-articleFull {
     margin-bottom: 80px;
   }
+  &.is-articleMeta {
+    .article-title {
+      float: left;
+      font-size: px2em(25px, $font-size-main);
+    }
+    margin-bottom: 60px;
+  }
 }
 
 .article-head {
