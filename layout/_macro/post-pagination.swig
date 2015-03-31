@@ -10,8 +10,10 @@
                 {% endif %}
             </a>
         {% endif %}
+        {% if prevLink.length > 0 && nextLink.length > 0 %}
+            <span class="pagination-break u-hightLightText">&bullet;</span>
+        {% endif %}
         {% if nextLink.length > 0 %}
-            <span class="pagination-break u-hightLightText">&bull;</span>
             <a class="pagination-item" href="{{ url_for(nextLink) }}">
                 {% if nextTitle %}
                     下一篇：{{ nextTitle }}
