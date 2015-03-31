@@ -11,6 +11,7 @@
     <main class="main u-cf block">
         {% block content %}{% endblock %}
         {% block aside %}{% endblock %}
+        {% block pagination %}{% endblock %}
     </main>
     <div class="bg-global" style="background-image: url('image/bg-default.jpg')"></div>
     <footer class="foot">

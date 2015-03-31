@@ -8,7 +8,7 @@
 </div>
 <nav class="head-nav">
     <a class="head-nav-item" href="/">首页</a>
-    <a class="head-nav-item" href="/archive">归档</a>
-    <a class="head-nav-item" href="/tag">标签</a>
+    <a class="head-nav-item" href="/archives">归档</a>
+    {#<a class="head-nav-item" href="/tags">标签</a>#}
     <a class="head-nav-item" href="/about">关于我</a>
 </nav>

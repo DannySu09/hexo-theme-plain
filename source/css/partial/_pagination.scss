@@ -1,0 +1,20 @@
+.pagination {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $color-break-line;
+  text-align: center;
+  clear: left;
+}
+
+.pagination-item {
+  display: block;
+  @extend %anchorActAsNormal;
+  color: $color-line-and-small-area;
+  &:first-of-type {
+    margin-left: -10em;
+  }
+  &:last-of-type {
+    margin-right: -10em;
+  }
+}

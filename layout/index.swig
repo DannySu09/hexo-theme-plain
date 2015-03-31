@@ -1,12 +1,16 @@
 {% extends '_layout.swig' %}
 {% import '_macro/article.swig' as postRender %}
+{% import '_macro/page-pagination.swig' as paginateRender %}
 
 {% block title %} {{ config.title }} {% endblock %}
 {% block content %}
     <section class="main-article">
-        {% for post in site.posts %}
+        {% for post in page.posts %}
             {{ postRender.post(post) }}
         {% endfor %}
     </section>
 {% endblock %}
 {% block aside %}{% include '_partial/aside.swig' %}{% endblock %}
+{% block pagination %}
+    {{ paginateRender.pagePaginate(page.prev, page.next) }}
+{% endblock %}
