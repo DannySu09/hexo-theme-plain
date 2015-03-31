@@ -10,7 +10,7 @@
     </header>
     <main class="main u-cf block">
         {% block content %}{% endblock %}
-        {% import '_partial/aside.swig' %}
+        {% include '_partial/aside.swig' %}
     </main>
     <div class="bg-global" style="background-image: url('image/bg-default.jpg')"></div>
     <footer class="foot">

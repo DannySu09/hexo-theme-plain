@@ -1,8 +1,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
 {% if config.description %}
-    <meta name="description" content="{{ config.description }}"/>
+<meta name="description" content="{{ config.description }}"/>
 {% endif %}
-<link rel="shortcut icon" href="favicon.png"/>
-<link rel="stylesheet" href="css/style.css"/>
+<link rel="shortcut icon" href= "{{ url_for('favicon.png') }}"/>
+<link rel="stylesheet" href="{{ url_for('css/style.css') }}"/>

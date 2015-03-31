@@ -1,5 +1,5 @@
 <a class="head-flag" href="/">
-    <img class="head-flag-img" src="image/logo.png" alt="苏乃文的个人博客"/>
+    <img class="head-flag-img" src="{{ url_for('image/logo.png') }}" alt="{{ config.title }}"/>
 </a>
 <div class="head-search">
     <form action="//google.com/search" method="get" accept-charset="utf-8">

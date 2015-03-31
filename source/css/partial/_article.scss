@@ -1,5 +1,8 @@
 .article {
   margin-bottom: 200px;
+  &.is-articleFull {
+    margin-bottom: 80px;
+  }
 }
 
 .article-head {
@@ -10,6 +13,9 @@
   display: block;
   @extend %anchorActAsNormal;
   @extend %blockTitle;
+  @at-root a#{&}:hover {
+    color: lighten($color-general-title, 10%);
+  }
 }
 
 .article-meta {
@@ -17,6 +23,7 @@
   font-size: px2em(14px, $font-size-main);
   line-height: (18/14);
   color: $color-line-and-small-area;
+  clear: left;
 }
 
 .article-meta-item {
@@ -35,7 +42,7 @@
 }
 
 .article-content {
-  font-size: px2em(16px);
+  font-size: px2em(20px, $font-size-main);
 }
 
 .article-footer {

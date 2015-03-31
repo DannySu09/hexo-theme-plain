@@ -1,10 +1,10 @@
-{% macro post(post) %}
-<article class="article">
+{% macro post(post, isFull) %}
+<article class="article {% if isFull == 'full' %} is-articleFull {% endif %}">
     <header class="article-head">
-        {% if post.title %}
-            <a class="article-title" href="{{ url_for(post.path) }}">{{ post.title }}</a>
-        {% else %}
+        {% if isFull == 'full' %}
             <h1 class="article-title">{{ post.title }}</h1>
+        {% else %}
+            <a class="article-title" href="{{ url_for(post.path) }}">{{ post.title }}</a>
         {% endif %}
         <ul class="article-meta">
             <li class="article-meta-item">
@@ -37,13 +37,13 @@
             </li>
         </ul>
     </header>
-    {% if post.excerpt %}
+    {% if post.excerpt && isFull != 'full' %}
         <div class="article-content">{{ post.excerpt }}</div>
+        <footer class="article-footer">
+            <a class="article-footer-readFurther" href="{{ url_for(post.path) }}">继续阅读</a>
+        </footer>
     {% else %}
         <div class="article-content">{{ post.content }}</div>
     {% endif %}
-    <footer class="article-footer">
-        <a class="article-footer-readFurther" href="{{ url_for(post.path) }}">继续阅读</a>
-    </footer>
 </article>
 {% endmacro %}

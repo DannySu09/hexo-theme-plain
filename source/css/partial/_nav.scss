@@ -13,11 +13,18 @@
 
 .head-flag {
   float: left;
+  width: 47px;
+  height: 47px;
+  overflow: hidden;
+  border-radius: 26px;
+  &:hover {
+    box-shadow: 0 0 0 1px $color-general-high-light ;
+    -webkit-box-shadow: 0 0 0 1px $color-general-high-light ;
+  }
 }
 .head-flag-img {
-  width: auto;
-  height: 47px;
-  border-radius: 26px;
+  width: 100%;
+  height: 100%;
   vertical-align: top;
   @at-root .has-filter & {
     box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
@@ -45,9 +52,6 @@ $height-head-nav-menu: 40px;
   vertical-align: top;
   &:last-of-type {
     margin-right: 0;
-  }
-  &:hover {
-    color: $color-general-high-light;
   }
   @at-root .has-filter & {
     color: #ffffff;
