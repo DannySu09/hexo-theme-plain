@@ -4,6 +4,7 @@
 
 .aside-title {
   @extend %blockTitle;
+  color: $color-line-and-small-area;
 }
 
 .aside-list {
