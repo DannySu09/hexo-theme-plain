@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  font: $font-size-default "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font: $font-size-default "Georgia", "Songti SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   line-height: 1.5;
   color: $color-general-text;
   background-color: $color-white;
@@ -47,5 +47,5 @@ button {
 }
 
 a:hover {
-  color: $color-general-high-light;
+  color: $color-general-high-light !important;
 }

@@ -16,5 +16,6 @@
     <footer class="foot">
         <p class="foot-text">sunaiwen 2015</p>
     </footer>
+    {% include '_partial/after-foot.swig' %}
 </body>
 </html>

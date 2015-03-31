@@ -1,0 +1,44 @@
+//    覆盖 prism 代码高亮样式
+%coverPrismStyle {
+  text-shadow: none !important;
+  -webkit-text-shadow: none !important;
+  background-color: $color-grey-l1 !important;
+}
+
+.essay {
+  font-size: px2em(19px, $font-size-main);
+  line-height: 1.9;
+  letter-spacing: .01em;
+
+  h2 {
+    margin-top: 4em;
+  }
+  p {
+    margin-top: 2.2em;
+  }
+  pre, code {
+    margin-left: .1em;
+    margin-right: .1em;
+    padding: .2em .4em;
+    border-radius: .2em;
+    font-size: .8em;
+    font-family: "Menlo";
+    background-color: $color-grey-l1;
+    @extend %coverPrismStyle;
+  }
+  pre > code {
+    font-size: 1em;
+  }
+  span {
+    @extend %coverPrismStyle
+  }
+
+  ol {
+    padding-left: 1.2em;
+  }
+
+  a {
+    @extend %anchorActAsNormal;
+    color: $color-line-and-small-area;
+  }
+}

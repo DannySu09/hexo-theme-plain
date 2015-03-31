@@ -14,7 +14,7 @@
   @extend %anchorActAsNormal;
   @extend %blockTitle;
   @at-root a#{&}:hover {
-    color: lighten($color-general-title, 10%);
+    color: lighten($color-general-title, 10%) !important;
   }
 }
 
@@ -41,20 +41,16 @@
   @extend %anchorActAsNormal;
 }
 
-.article-content {
-  font-size: px2em(20px, $font-size-main);
-}
-
 .article-footer {
   margin-top: 60px;
-  border-top: 1px solid $color-line-and-small-area;
+  border-top: 1px solid $color-break-line;
 }
 .article-footer-readFurther {
   float: right;
   width: 6.5em;
   height: 2.5em;
   margin-top: -1px;
-  border: 1px solid $color-line-and-small-area;
+  border: 1px solid $color-break-line;
   border-radius: 0 0 5px 5px;
   font-size: px2em(14px, $font-size-main);
   color: $color-line-and-small-area;

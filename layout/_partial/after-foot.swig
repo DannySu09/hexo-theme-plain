@@ -1,0 +1,1 @@
+<script src="{{ url_for('js/prism.js') }}"></script>

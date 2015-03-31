@@ -17,6 +17,8 @@
   height: 47px;
   overflow: hidden;
   border-radius: 26px;
+  box-shadow: 0 0 0 1px $color-line-and-small-area ;
+  -webkit-box-shadow: 0 0 0 1px $color-line-and-small-area ;
   &:hover {
     box-shadow: 0 0 0 1px $color-general-high-light ;
     -webkit-box-shadow: 0 0 0 1px $color-general-high-light ;
@@ -40,7 +42,7 @@ $height-head-nav-menu: 40px;
   height: $height-head-nav-menu;
   line-height: $height-head-nav-menu - 1px;
   margin-left: -154px;
-  border-bottom: 2px solid $color-line-and-small-area
+  border-bottom: 2px solid $color-break-line
 }
 .head-nav-item {
   display: inline-block;
@@ -71,6 +73,7 @@ $height-head-nav-menu: 40px;
   border: 1px solid $color-line-and-small-area;
   border-radius: 23px;
   font-size: px2em(15px);
+  font-family: inherit;
   color: $color-line-and-small-area;
   background-color: $color-white;
   &:focus {

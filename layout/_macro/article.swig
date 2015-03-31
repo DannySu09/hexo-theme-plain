@@ -38,12 +38,12 @@
         </ul>
     </header>
     {% if post.excerpt && isFull != 'full' %}
-        <div class="article-content">{{ post.excerpt }}</div>
+        <div class="article-content essay">{{ post.excerpt }}</div>
         <footer class="article-footer">
             <a class="article-footer-readFurther" href="{{ url_for(post.path) }}">继续阅读</a>
         </footer>
     {% else %}
-        <div class="article-content">{{ post.content }}</div>
+        <div class="article-content essay">{{ post.content }}</div>
     {% endif %}
 </article>
 {% endmacro %}
