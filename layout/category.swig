@@ -5,7 +5,7 @@
 {% block content %}
     {# ct = category&tag #}
     <header class="ct-header">
-        <h1 class="ct-title"><i class="fa fa-book ct-icon"></i><span class="u-hightLightText">「</span>{{ page.category }}<span class="u-hightLightText">」</span>分类下的文章</h1>
+        <h1 class="ct-title"><i class="fa fa-book ct-icon u-hightLightText"></i><span class="u-hightLightText">「</span>{{ page.category }}<span class="u-hightLightText">」</span>分类下的文章</h1>
     </header>
     <section class="main-article">
         {% for post in page.posts %}
