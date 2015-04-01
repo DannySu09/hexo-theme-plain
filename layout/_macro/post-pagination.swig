@@ -10,9 +10,6 @@
                 {% endif %}
             </a>
         {% endif %}
-        {% if prevLink.length > 0 && nextLink.length > 0 %}
-            <span class="pagination-break u-hightLightText">&bullet;</span>
-        {% endif %}
         {% if nextLink.length > 0 %}
             <a class="pagination-item" href="{{ url_for(nextLink) }}">
                 {% if nextTitle %}
@@ -22,6 +19,9 @@
                 {% endif %}
                 <i class="fa fa-angle-right u-hightLightText"></i>
             </a>
+        {% endif %}
+        {% if prevLink.length > 0 && nextLink.length > 0 %}
+            <span class="pagination-break u-hightLightText">&bullet;</span>
         {% endif %}
     </footer>
 {% endmacro %}
