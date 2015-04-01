@@ -49,3 +49,10 @@ button {
 a:hover {
   color: $color-general-high-light !important;
 }
+
+img {
+  border: 1px solid $color-grey-l1;
+  padding: .5em;
+  vertical-align: top;
+  max-width: 100%;
+}
