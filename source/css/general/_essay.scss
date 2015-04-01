@@ -10,18 +10,44 @@
   line-height: 1.9;
   letter-spacing: .01em;
 
-  h2 {
+  h1, h2, h3, h4 {
     margin-top: 3em;
   }
 
-  p {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  & > p {
     margin-top: 2.5em;
     &:last-of-type {
       margin-bottom: 2.5em;
     }
-    @at-root h2+p {
+    @at-root h1+P, h2+p {
       margin-top: 1em !important;
     }
+  }
+
+  blockquote {
+    position: relative;
+    margin: 1.5em 0 1.5em .2em;
+    padding: 1em;
+    border-left: 6px solid $color-grey-l4;
+    font-size: .8em;
+    color: $color-grey-l3;
+    background-color: $color-grey-l1;
   }
 
   pre {
