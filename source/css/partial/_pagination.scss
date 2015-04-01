@@ -13,4 +13,14 @@
   display: block;
   @extend %anchorActAsNormal;
   color: $color-line-and-small-area;
+
+  @at-root .pagination--post & {
+    max-width: 45%;
+    &:first-of-type {
+      float: left;
+    }
+    &:last-of-type {
+      float: right;
+    }
+  }
 }

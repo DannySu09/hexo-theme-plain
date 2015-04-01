@@ -6,9 +6,7 @@
 {% block content %}
     <section class="main-article">
         {{ postRender.post(page, 'full') }}
+        {{ paginateRender.postPaginate(page.prev.path, page.next.path, page.prev.title, page.next.title) }}
     </section>
 {% endblock %}
 {% block aside %}{% include '_partial/aside.swig' %}{% endblock %}
-{% block pagination %}
-    {{ paginateRender.postPaginate(page.prev.path, page.next.path, page.prev.title, page.next.title) }}
-{% endblock %}

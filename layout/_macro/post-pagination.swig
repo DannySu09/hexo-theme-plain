@@ -1,5 +1,5 @@
 {% macro postPaginate(prevLink, nextLink,  prevTitle, nextTitle) %}
-    <footer class="pagination u-centerBlock">
+    <footer class="pagination pagination--post u-cf">
         {% if prevLink.length > 0 %}
             <a class="pagination-item" href="{{ url_for(prevLink) }}">
                 <i class="fa fa-angle-left u-hightLightText"></i>
