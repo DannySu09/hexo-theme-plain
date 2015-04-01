@@ -12,5 +12,5 @@
 {% endblock %}
 {% block aside %}{% include '_partial/aside.swig' %}{% endblock %}
 {% block pagination %}
-    {{ paginateRender.pagePaginate(page.prev, page.next) }}
+    {{ paginateRender.pagePaginate(page.prev, page.next, page.prev_link, page.next_link) }}
 {% endblock %}
