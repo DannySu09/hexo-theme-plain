@@ -1,9 +1,14 @@
 .ct-header {
-  margin-bottom: 100px;
+  margin-top: 8em;
+  margin-bottom: 3em;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .ct-title {
-  font-size: px2em(32px, $font-size-main);
+  font-size: px2em(40px, $font-size-main);
+  color: $color-grey-l2;
   border-bottom: 1px solid $color-break-line;
 }
 

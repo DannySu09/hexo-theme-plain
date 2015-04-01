@@ -4,6 +4,9 @@
   border-top: 1px solid $color-break-line;
   text-align: center;
   clear: left;
+  &.is-onlyOnePage {
+    display: none;
+  }
 }
 
 .pagination-item {

@@ -11,7 +11,9 @@
 
         {% if year != post.year %}
             {% set year = post.year %}
-            <h1 class="archive-year">{{ year }}</h1>
+            <header class="archive-header">
+                <h1 class="archive-year">{{ year }}年的文章</h1>
+            </header>
         {% endif %}
         {{ renderArticleInfo.articleInfo(post) }}
     {% endfor %}
