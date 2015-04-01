@@ -17,5 +17,5 @@
     {% endfor %}
 {% endblock %}
 {% block pagination %}
-    {{ renderPaination.pagePaginate(page.prev, page.next, url_for(page.prev_link), url_for(page.next_link)) }}
+    {{ renderPaination.pagePaginate(page.prev, page.next, page.prev_link, page.next_link) }}
 {% endblock %}
