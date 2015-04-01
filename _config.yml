@@ -1,0 +1,8 @@
+## The configuration of hexo-theme-plain
+
+# google analysis
+trackId: UA-51163552-1
+
+# comment
+# type: duoshuo or disqus
+commentType: duoshuo
