@@ -15,7 +15,7 @@
     </main>
     <div class="bg-global" style="background-image: url('image/bg-default.jpg')"></div>
     <footer class="foot">
-        <span class="foot-text">&spades;&nbsp;sunaiwen - 2015&nbsp;&clubs;</span>
+        <span class="foot-text">&spades;&nbsp;sunaiwen - 2015&nbsp;&clubs;&nbsp;Power by hexo&nbsp;&spades;</span>
     </footer>
     {% include '_partial/after-foot.swig' %}
 </body>
