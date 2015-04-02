@@ -4,6 +4,7 @@
 <div class="head-search">
     <form action="//google.com/search" method="get" accept-charset="utf-8">
         <input class="head-search-input" type="search" name="q" placeholder="搜索本站文章..."/>
+        <input type="hidden" name="q" value="site:{{ config.url }}"/>
     </form>
 </div>
 <nav class="head-nav">
