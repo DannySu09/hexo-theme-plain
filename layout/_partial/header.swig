@@ -10,6 +10,5 @@
 <nav class="head-nav">
     <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
     <a class="head-nav-item" href="{{ url_for(config.root + config.archive_dir) }}">归档</a>
-    {#<a class="head-nav-item" href="/tags">标签</a>#}
-    <a class="head-nav-item" href="{{ url_for(theme.about) }}">关于我</a>
+    <a class="head-nav-item" href="{{ url_for(theme.about_url) }}">关于我</a>
 </nav>
