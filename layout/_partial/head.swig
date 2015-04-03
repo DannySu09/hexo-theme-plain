@@ -6,5 +6,5 @@
 {% endif %}
 <link rel="shortcut icon" href= "{{ url_for('favicon.png') }}"/>
 <link rel="stylesheet" href="{{ url_for('css/style.css') }}"/>
-<link rel="stylesheet" href="{{ url_for('css/mono-blue.css') }}"/>
+<link rel="stylesheet" href="{{ url_for('css/highlight.css') }}"/>
 <script src="{{ url_for('js/modernizr-shiv.js') }}"></script>
