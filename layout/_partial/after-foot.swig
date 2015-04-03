@@ -1,4 +1,5 @@
-<script src="{{ url_for('js/prism.js') }}"></script>
+<script src="{{ url_for('js/highlight.js') }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 {% if theme.trackId %}
     {% include '../_script/google-analysis.swig' %}
 {% endif %}
