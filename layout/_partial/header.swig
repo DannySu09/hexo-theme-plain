@@ -1,4 +1,4 @@
-<a class="head-flag" href="/">
+<a class="head-flag" href="{{ url_for(config.root) }}">
     <img class="head-flag-img" src="{{ url_for('image/logo.png') }}" alt="{{ config.title }}"/>
 </a>
 <div class="head-search">
@@ -8,8 +8,8 @@
     </form>
 </div>
 <nav class="head-nav">
-    <a class="head-nav-item" href="/">首页</a>
-    <a class="head-nav-item" href="/archives">归档</a>
+    <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
+    <a class="head-nav-item" href="{{ url_for(config.root + config.archive_dir) }}">归档</a>
     {#<a class="head-nav-item" href="/tags">标签</a>#}
-    <a class="head-nav-item" href="/about">关于我</a>
+    <a class="head-nav-item" href="{{ url_for(theme.about) }}">关于我</a>
 </nav>
