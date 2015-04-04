@@ -3,9 +3,13 @@
 </a>
 <div class="head-search">
     <form action="//google.com/search" method="get" accept-charset="utf-8">
+        <input id="j-searchScope" type="hidden" name="q" value="{{ config.url }}"/>
         <input class="head-search-input" type="search" name="q" placeholder="搜索本站文章..."/>
-        <input type="hidden" name="q" value="site:{{ config.url }}"/>
     </form>
+    <script>
+        var scopeInput = document.getElementById('j-searchScope');
+        scopeInput.value = 'site:' + scopeInput.value.replace(/^https?:\/\//, '');
+    </script>
 </div>
 <nav class="head-nav">
     <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
