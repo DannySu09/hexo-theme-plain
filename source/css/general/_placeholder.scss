@@ -23,4 +23,7 @@
   font-weight: bold;
   line-height: 1.2;
   color: $color-general-title;
+  @include phone {
+    font-size: px2em(30px, $font-size-main);
+  }
 }

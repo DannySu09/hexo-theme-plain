@@ -1,7 +1,11 @@
-@charset "UTF-8";
+@mixin screen($resMin, $resMax){
+  @media screen and (min-width: $resMin) and (max-width: $resMax){
+    @content;
+  }
+}
 
 @mixin phone {
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @include screen(320px, 540px) {
     @content;
   }
 }

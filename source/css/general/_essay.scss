@@ -11,6 +11,10 @@ $font-essay-general: 19px;
   font-size: px2em($font-essay-general, $font-size-main);
   line-height: 1.9;
   letter-spacing: .01em;
+  @include phone {
+    line-height: 1.75;
+    word-break: break-all;
+  }
 
   h1, h2, h3, h4 {
     margin-top: 3em;
