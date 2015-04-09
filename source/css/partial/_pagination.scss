@@ -15,6 +15,11 @@
   @extend %anchorActAsNormal;
   color: $color-line-and-small-area;
 
+  @at-root .is-inPage & {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+  }
   @at-root .pagination--post & {
     max-width: 45%;
     &:first-of-type {
