@@ -24,7 +24,6 @@
   margin-left: auto;
   margin-top: 80px;
   margin-right: auto;
-  z-index: $zIndex-l2;
   font-size: $font-size-main;
   @extend %block;
   @at-root .has-filter & {
@@ -35,6 +34,7 @@
   }
   @include phone {
     width: 100%;
+    margin-top: 0;
     font-size: $font-size-main * 9 / 10;
   }
 }

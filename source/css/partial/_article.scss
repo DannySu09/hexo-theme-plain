@@ -10,6 +10,9 @@
     }
     margin-bottom: 60px;
   }
+  @include phone {
+    margin-bottom: 80px;
+  }
 }
 
 .article-head {
