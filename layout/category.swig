@@ -1,5 +1,6 @@
 {% extends '_layout.swig' %}
 {% import '_macro/article-info.swig' as renderArticleInfo %}
+{% import '_macro/page-pagination.swig' as paginateRender %}
 
 {% block title %} 「{{ page.category }}」分类下的文章 {% endblock %}
 {% block content %}
@@ -12,4 +13,7 @@
             {{ renderArticleInfo.articleInfo(post) }}
         {% endfor %}
     </section>
+{% endblock %}
+{% block pagination %}
+    {{ paginateRender.pagePaginate(page.prev, page.next, page.prev_link, page.next_link) }}
 {% endblock %}

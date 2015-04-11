@@ -13,3 +13,6 @@
         {% endfor %}
     </section>
 {% endblock %}
+{% block pagination %}
+    {{ paginateRender.pagePaginate(page.prev, page.next, page.prev_link, page.next_link) }}
+{% endblock %}
