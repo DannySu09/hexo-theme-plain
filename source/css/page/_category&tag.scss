@@ -10,6 +10,9 @@
   font-size: px2em(40px, $font-size-main);
   color: $color-grey-l2;
   border-bottom: 1px solid $color-break-line;
+  @include phone {
+    font-size: px2em(26px, $font-size-main);
+  }
 }
 
 .ct-icon {
