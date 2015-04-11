@@ -36,6 +36,7 @@
 .head-flag-img {
   width: 100%;
   height: 100%;
+  padding: 2px;
   vertical-align: top;
   @at-root .has-filter & {
     box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
@@ -92,7 +93,7 @@ $height-head-nav-menu: 40px;
     display: none;
     width: 100%;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 40%;
     left: 0;
     top: 0;
     background-color: rgba(255,255,255, .9);
@@ -108,7 +109,6 @@ $height-head-nav-menu: 40px;
   height: 35px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 80px;
   border: 1px solid $color-line-and-small-area;
   border-radius: 18px;
   font-size: px2em(15px);
@@ -127,7 +127,10 @@ $height-head-nav-menu: 40px;
 .head-search-close {
   display: none;
   @include phone {
+    position: absolute;
     display: block;
+    top: 10px;
+    right: 10px;
     width: 1.5em;
     height: 1.5em;
     border: 1px solid $color-grey-l2;
@@ -135,7 +138,7 @@ $height-head-nav-menu: 40px;
     margin-right: auto;
     border-radius: .8em;
     color: $color-grey-l2;
-    font-size: px2em(30px);
+    font-size: px2em(25px);
     background-color: transparent;
   }
 }
