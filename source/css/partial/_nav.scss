@@ -7,9 +7,8 @@
   text-align: center;
   @include phone {
     height: auto;
-    padding-top: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 10px 0;
+    border-top: 4px solid $color-general-high-light;
   }
 }
 
@@ -44,11 +43,11 @@
   }
 }
 
-$height-head-nav-menu: 40px;
+$height-head-nav-menu: 50px;
 .head-nav {
   position: absolute;
   left: 50%;
-  top: 25px;
+  top: 15px;
   height: $height-head-nav-menu;
   line-height: $height-head-nav-menu - 1px;
   margin-left: -99px;
@@ -113,7 +112,6 @@ $height-head-nav-menu: 40px;
   border-radius: 18px;
   font-size: px2em(15px);
   font-family: inherit;
-  line-height: 34px;
   color: $color-line-and-small-area;
   background-color: $color-white;
   &:focus {
@@ -129,16 +127,15 @@ $height-head-nav-menu: 40px;
   @include phone {
     position: absolute;
     display: block;
-    top: 10px;
-    right: 10px;
-    width: 1.5em;
-    height: 1.5em;
+    bottom: 100px;
+    left: 50%;
+    width: 2em;
+    height: 2em;
     border: 1px solid $color-grey-l2;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: .8em;
+    margin-left: -1em;
+    border-radius: 1.1em;
     color: $color-grey-l2;
-    font-size: px2em(25px);
+    font-size: px2em(28px);
     background-color: transparent;
   }
 }

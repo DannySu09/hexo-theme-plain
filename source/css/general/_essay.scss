@@ -91,7 +91,6 @@ $font-essay-general: 19px;
   }
 
   a {
-    @extend %anchorActAsNormal;
     color: $color-line-and-small-area;
   }
 }
