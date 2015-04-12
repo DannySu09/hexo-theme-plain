@@ -1,11 +1,11 @@
 {% extends '_layout.swig' %}
 {% import '_macro/article-info.swig' as renderArticleInfo %}
 
-{% block title %} 「{{ page.tag }}」标签有&nbsp;{{ page.tag.length }}&nbsp;文章 {% endblock %}
+{% block title %} 「{{ page.tag }}」标签文章 {% endblock %}
 {% block content %}
     <section class="main-article">
         <header class="ct-header">
-            <h1 class="ct-title"><i class="fa fa-tag ct-icon u-hightLightText"></i><span class="u-hightLightText">「</span>{{ page.tag }}<span class="u-hightLightText">」</span>标签有&nbsp;<span class="u-hightLightText">{{ page.tag.length }}</span>&nbsp;篇文章</h1>
+            <h1 class="ct-title"><i class="fa fa-tag ct-icon u-hightLightText"></i><span class="u-hightLightText">「</span>{{ page.tag }}<span class="u-hightLightText">」</span>标签文章</h1>
         </header>
         {% for post in page.posts %}
             {{ renderArticleInfo.articleInfo(post) }}
