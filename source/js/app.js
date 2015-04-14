@@ -46,14 +46,11 @@
     };
 
     win.o.Search = Search;
-
 })(window, document);
 
 (function(win, doc){
     var search = null;
-    doc.onreadystatechange = function(){
-        if(doc.readyState === 'complete') {
-            search = new win.o.Search();
-        }
-    }
+    doc.addEventListener('DOMContentLoaded', function(){
+        search = new win.o.Search();
+    });
 })(window, document);
