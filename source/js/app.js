@@ -20,21 +20,12 @@
         var openBtn = this.openBtn;
         var closeBtn = this.closeBtn;
 
-        if(doc.addEventListener){
-            openBtn.addEventListener('click', function(){
-                self.show();
-            }, false);
-            closeBtn.addEventListener('click', function(){
-                self.hide();
-            }, false);
-        } else {
-            openBtn.attachEvent('click', function(){
-                self.show();
-            });
-            closeBtn.attachEvent('click', function(){
-                self.hide();
-            });
-        }
+        openBtn.addEventListener('click', function(){
+            self.show();
+        }, false);
+        closeBtn.addEventListener('click', function(){
+            self.hide();
+        }, false);
     };
 
     Search.prototype.show = function(){
