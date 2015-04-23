@@ -2,6 +2,9 @@
 {% import '_macro/article.swig' as postRender %}
 {% import '_macro/post-pagination.swig' as paginateRender %}
 
+{% block head %}
+    <meta name="description" content="{{ page.excerpt|striptags }}"/>
+{% endblock %}
 {% block title %} {{ page.title }} {% endblock %}
 {% block content %}
     <section class="main-article">

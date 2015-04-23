@@ -2,6 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
     {% include '_partial/head.swig' %}
+    {% block head %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>

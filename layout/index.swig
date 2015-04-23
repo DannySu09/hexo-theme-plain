@@ -2,6 +2,11 @@
 {% import '_macro/article.swig' as postRender %}
 {% import '_macro/page-pagination.swig' as paginateRender %}
 
+{% block head %}
+    {% if config.description %}
+        <meta name="description" content="{{ config.description }}"/>
+    {% endif %}
+{% endblock %}
 {% block title %} {{ config.title }} {% endblock %}
 {% block content %}
     <section class="main-article">
