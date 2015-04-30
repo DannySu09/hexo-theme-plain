@@ -2,6 +2,9 @@
 {% import '_macro/article-info.swig' as renderArticleInfo %}
 {% import '_macro/page-pagination.swig' as paginateRender %}
 
+{% block head %}
+    <meta name="description" content="「{{ page.category }}」分类文章"/>
+{% endblock %}
 {% block title %} 「{{ page.category }}」分类文章 {% endblock %}
 {% block content %}
     <section class="main-article">

@@ -2,6 +2,9 @@
 {% import '_macro/article-info.swig' as renderArticleInfo %}
 {% import '_macro/page-pagination.swig' as renderPaination %}
 
+{% block head %}
+    <meta name="description" content="归档&nbsp;|&nbsp;共&nbsp;{{ site.posts.length }}&nbsp;篇文章"/>
+{% endblock %}
 {% block title %} 归档&nbsp;|&nbsp;共&nbsp;{{ site.posts.length }}&nbsp;篇文章 {% endblock %}
 
 {% block content %}

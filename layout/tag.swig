@@ -1,6 +1,9 @@
 {% extends '_layout.swig' %}
 {% import '_macro/article-info.swig' as renderArticleInfo %}
 
+{% block head %}
+    <meta name="description" content="「{{ page.tag }}」标签文章"/>
+{% endblock %}
 {% block title %} 「{{ page.tag }}」标签文章 {% endblock %}
 {% block content %}
     <section class="main-article">
