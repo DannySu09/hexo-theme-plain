@@ -9,11 +9,11 @@
     <header class="head u-cf">
         {% include '_partial/header.swig' %}
     </header>
-    <main class="main u-cf block">
+    <div class="main u-cf block">
         {% block content %}{% endblock %}
         {% block aside %}{% endblock %}
         {% block pagination %}{% endblock %}
-    </main>
+    </div>
     <div class="bg-global" style="background-image: url('image/bg-default.jpg')"></div>
     <footer class="foot">
         <span class="foot-text">&spades;&nbsp;sunaiwen - 2015&nbsp;&clubs;&nbsp;Power by hexo&nbsp;&spades;</span>
