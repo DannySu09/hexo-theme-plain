@@ -23,6 +23,7 @@
   display: block;
   @extend %anchorActAsNormal;
   @extend %blockTitle;
+  @extend %titleFont;
   @at-root a#{&}:hover {
     color: lighten($color-general-title, 10%) !important;
   }

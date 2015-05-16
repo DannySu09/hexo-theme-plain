@@ -27,3 +27,8 @@
     font-size: px2em(30px, $font-size-main);
   }
 }
+
+// the font style of the titles inside articles
+%titleFont {
+  font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}

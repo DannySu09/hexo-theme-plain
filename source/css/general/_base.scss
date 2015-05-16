@@ -28,7 +28,7 @@ h5,
 h6 {
   padding-left: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  @extend %titleFont;
 }
 
 
