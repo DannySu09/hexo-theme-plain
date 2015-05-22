@@ -57,8 +57,8 @@ a:hover {
 }
 
 img {
+  display: block;
   border: 1px solid $color-grey-l1;
   padding: .5em;
-  vertical-align: top;
   max-width: 100%;
 }

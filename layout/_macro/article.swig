@@ -1,5 +1,5 @@
 {% macro post(post, isFull) %}
-<article class="article {% if isFull == 'full' %} is-articleFull {% endif %}">
+<article class="article {% if isFull == 'full' %} is-articleFull {% endif %} j-zoomerage-range">
     <header class="article-head">
         {% if isFull == 'full' %}
             <h1 class="article-title">{{ post.title }}</h1>
