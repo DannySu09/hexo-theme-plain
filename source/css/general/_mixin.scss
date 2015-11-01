@@ -14,3 +14,9 @@
   transition: $prop $duration;
   -webkit-transition: $prop $duration;
 }
+
+@mixin whenLteIE8 {
+  .lte-ie8 & {
+    @content;
+  }
+}

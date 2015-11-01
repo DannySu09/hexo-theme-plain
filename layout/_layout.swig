@@ -1,4 +1,7 @@
 <!doctype html>
+<!--[if lte IE 8]>
+<html lang="zh-cmn-Hans" class="lte-ie8">
+<![endif]-->
 <html lang="zh-cmn-Hans">
 <head>
     {% include '_partial/head.swig' %}
@@ -16,7 +19,8 @@
     </div>
     <div class="bg-global" style="background-image: url('image/bg-default.jpg')"></div>
     <footer class="foot">
-        <span class="foot-text">&spades;&nbsp;sunaiwen - 2015&nbsp;&clubs;&nbsp;Power by hexo&nbsp;&spades;</span>
+        <span class="foot-text">&spades;&nbsp;sunaiwen - 2015&nbsp;&clubs;&nbsp;Power by hexo&nbsp;&spades;<br/>
+            Using theme:&nbsp;<a  target="_blank" href="http://github.com/sunaiwen/hexo-theme-plain">hexo-theme-plain</a></span>
     </footer>
     {% include '_partial/after-foot.swig' %}
 </body>

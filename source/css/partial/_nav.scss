@@ -41,13 +41,16 @@
     box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
     -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
   }
+  @include whenLteIE8 {
+    border: none;
+  };
 }
 
 $height-head-nav-menu: 50px;
 .head-nav {
   position: absolute;
   left: 50%;
-  top: 15px;
+  top: 25px;
   height: $height-head-nav-menu;
   line-height: $height-head-nav-menu - 1px;
   margin-left: -99px;
@@ -110,6 +113,7 @@ $height-head-nav-menu: 50px;
   padding-right: 10px;
   border: 1px solid $color-line-and-small-area;
   border-radius: 18px;
+  line-height: 35px;
   font-size: px2em(15px);
   font-family: inherit;
   color: $color-line-and-small-area;

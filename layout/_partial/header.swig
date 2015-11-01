@@ -1,6 +1,12 @@
 <a class="head-flag" href="{{ url_for(config.root) }}">
     <img class="head-flag-img" src="{{ url_for('image/logo.png') }}" alt="{{ config.title }}"/>
 </a>
+<nav class="head-nav">
+    <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
+    <a class="head-nav-item" href="{{ url_for(config.root + config.archive_dir) }}">归档</a>
+    <a class="head-nav-item" href="{{ url_for(config.root + theme.about_url) }}">关于我</a>
+    <a id="j-nav-searchBtn" class="head-nav-item hni-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+</nav>
 <div id="j-searchBox" class="head-search">
     <button id="j-search-closeBtn" class="head-search-close"><i class="fa fa-close"></i></button>
     <form action="//google.com/search" method="get" accept-charset="utf-8">
@@ -13,9 +19,3 @@
         scopeInput.value = 'site:' + scopeInput.value.replace(/^https?:\/\//, '');
     </script>
 </div>
-<nav class="head-nav">
-    <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
-    <a class="head-nav-item" href="{{ url_for(config.root + config.archive_dir) }}">归档</a>
-    <a class="head-nav-item" href="{{ url_for(config.root + theme.about_url) }}">关于我</a>
-    <a id="j-nav-searchBtn" class="head-nav-item hni-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-</nav>
