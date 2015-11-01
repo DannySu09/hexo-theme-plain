@@ -1,5 +1,5 @@
 ## Preview
-![hexo-theme-plain]("screenshot/preview-1.png")
+![hexo-theme-plain](screenshot/preview-1.png)
 
 ## Installation
 Go to the `your_hexo_root_dir/themes` directory, clone this repo:     
