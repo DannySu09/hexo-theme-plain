@@ -109,11 +109,10 @@ $height-head-nav-menu: 50px;
 .head-search-input {
   width: px2em(180px);
   height: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 7px 4px;
   border: 1px solid $color-line-and-small-area;
   border-radius: 18px;
-  line-height: 35px;
+  line-height: 21px;
   font-size: px2em(15px);
   font-family: inherit;
   color: $color-line-and-small-area;
