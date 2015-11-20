@@ -1,11 +1,10 @@
 ## The configuration of hexo-theme-plain
 
 # Google analysis
-trackId: UA-51163552-1
-
-# Comment
-# Type: duoshuo or disqus (disqus is not supported yet)
-commentType: duoshuo
+track_id: UA-51163552-1
 
 # The path of about page
-about_url: '/about'
+about_url: 'http://sunaiwen.github.io/resume/dist'
+
+# The avatar of you or your site
+avatar_url: ''

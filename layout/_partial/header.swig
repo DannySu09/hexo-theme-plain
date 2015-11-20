@@ -12,7 +12,11 @@
 <nav class="head-nav">
     <a class="head-nav-item" href="{{ url_for(config.root) }}">首页</a>
     <a class="head-nav-item" href="{{ url_for(config.root + config.archive_dir) }}">归档</a>
-    <a class="head-nav-item" href="{{ url_for(config.root + theme.aboutUrl) }}">关于我</a>
+    {% if theme.about_url %}
+      <a class="head-nav-item" href="{{ url_for(theme.about_url) }}">关于我</a>
+    {% else %}
+      <a class="head-nav-item" href="{{ url_for(config.root + 'about') }}">关于我</a>
+    {% endif %}
     <a id="j-nav-searchBtn" class="head-nav-item hni-search" href="javascript:void(0)">
         <i class="fa fa-search"></i>
     </a>
