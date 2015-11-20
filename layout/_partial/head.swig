@@ -3,4 +3,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
 <link rel="shortcut icon" href= "{{ url_for('favicon.png') }}"/>
 <link rel="stylesheet" href="{{ url_for('css/style.css') }}"/>
+<!--[ if lte IE 8 ]>
 <script src="{{ url_for('js/lib/modernizr-shiv.js') }}"></script>
+<![endif]-->
